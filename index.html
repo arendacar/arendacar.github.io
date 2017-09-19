@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Color Admin | Page with Top Menu</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	
+	<!-- ================== BEGIN BASE CSS STYLE ================== -->
+    <link href="assets/plugins/switchery/switchery.min.css" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<link href="assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet" />
+	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="assets/css/animate.min.css" rel="stylesheet" />
+	<link href="assets/css/style.min.css" rel="stylesheet" />
+	<link href="assets/css/style-responsive.min.css" rel="stylesheet" />
+	<link href="assets/css/theme/default.css" rel="stylesheet" id="theme" />
+	<!-- ================== END BASE CSS STYLE ================== -->
+	
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="assets/plugins/pace/pace.min.js"></script>
+	<!-- ================== END BASE JS ================== -->
+</head>
+<body>
+	<!-- begin #page-loader -->
+	<div id="page-loader" class="fade in"><span class="spinner"></span></div>
+	<!-- end #page-loader -->
+	
+	<!-- begin #page-container -->
+	<div id="page-container" class="page-container fade page-without-sidebar page-header-fixed page-with-top-menu">
+		<!-- begin #header -->
+		<div id="header" class="header navbar navbar-default navbar-fixed-top">
+			<!-- begin container-fluid -->
+			<div class="container-fluid">
+				<!-- begin mobile sidebar expand / collapse button -->
+				<div class="navbar-header">
+					<a href="index.html" class="navbar-brand"><span class="navbar-logo"></span> Color Admin</a>
+					<button type="button" class="navbar-toggle" data-click="top-menu-toggled">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<!-- end mobile sidebar expand / collapse button -->
+				
+				<!-- begin header navigation right -->
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<form class="navbar-form full-width">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Enter keyword" />
+								<button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
+							</div>
+						</form>
+					</li>
+					<li class="dropdown">
+						<a href="javascript:;" data-toggle="dropdown" class="dropdown-toggle f-s-14">
+							<i class="fa fa-bell-o"></i>
+							<span class="label">5</span>
+						</a>
+						<ul class="dropdown-menu media-list pull-right animated fadeInDown">
+                            <li class="dropdown-header">Notifications (5)</li>
+                            <li class="media">
+                                <a href="javascript:;">
+                                    <div class="media-left"><i class="fa fa-bug media-object bg-red"></i></div>
+                                    <div class="media-body">
+                                        <h6 class="media-heading">Server Error Reports</h6>
+                                        <div class="text-muted f-s-11">3 minutes ago</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="javascript:;">
+                                    <div class="media-left"><img src="assets/img/user-1.jpg" class="media-object" alt="" /></div>
+                                    <div class="media-body">
+                                        <h6 class="media-heading">John Smith</h6>
+                                        <p>Quisque pulvinar tellus sit amet sem scelerisque tincidunt.</p>
+                                        <div class="text-muted f-s-11">25 minutes ago</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="javascript:;">
+                                    <div class="media-left"><img src="assets/img/user-2.jpg" class="media-object" alt="" /></div>
+                                    <div class="media-body">
+                                        <h6 class="media-heading">Olivia</h6>
+                                        <p>Quisque pulvinar tellus sit amet sem scelerisque tincidunt.</p>
+                                        <div class="text-muted f-s-11">35 minutes ago</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="javascript:;">
+                                    <div class="media-left"><i class="fa fa-plus media-object bg-green"></i></div>
+                                    <div class="media-body">
+                                        <h6 class="media-heading"> New User Registered</h6>
+                                        <div class="text-muted f-s-11">1 hour ago</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="javascript:;">
+                                    <div class="media-left"><i class="fa fa-envelope media-object bg-blue"></i></div>
+                                    <div class="media-body">
+                                        <h6 class="media-heading"> New Email From John</h6>
+                                        <div class="text-muted f-s-11">2 hour ago</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-footer text-center">
+                                <a href="javascript:;">View more</a>
+                            </li>
+						</ul>
+					</li>
+					<li class="dropdown navbar-user">
+						<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+							<img src="assets/img/user-13.jpg" alt="" /> 
+							<span class="hidden-xs">Adam Schwartz</span> <b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu animated fadeInLeft">
+							<li class="arrow"></li>
+							<li><a href="javascript:;">Edit Profile</a></li>
+							<li><a href="javascript:;"><span class="badge badge-danger pull-right">2</span> Inbox</a></li>
+							<li><a href="javascript:;">Calendar</a></li>
+							<li><a href="javascript:;">Setting</a></li>
+							<li class="divider"></li>
+							<li><a href="javascript:;">Log Out</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- end header navigation right -->
+			</div>
+			<!-- end container-fluid -->
+		</div>
+		<!-- end #header -->
+		
+		<!-- begin #top-menu -->
+		<div id="top-menu" class="top-menu">
+            <!-- begin top-menu nav -->
+            <ul class="nav">
+                <li class="active">
+                    <a href="javascript:;">
+                        <i class="fa fa-car"></i>
+                        <span>Каталог машин</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="fa fa-th"></i>
+                        <span>График машин</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="fa fa-users"></i>
+                        <span>Клиенты</span> 
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="fa fa-truck"></i>
+                        <span>Поставщики</span> 
+                    </a>
+                </li>
+            </ul>
+            <!-- end top-menu nav -->
+		</div>
+		<!-- end #top-menu -->
+		
+		<!-- begin #content -->
+		<div id="content" class="content">
+			<!-- begin breadcrumb -->
+			<ol class="breadcrumb pull-right">
+				<li><a href="javascript:;">Какалог авто</a></li>
+				<li><a href="javascript:;">Карточка авто</a></li>
+				<li class="active">Audi A6</li>
+			</ol>
+			<!-- end breadcrumb -->
+			<!-- begin page-header -->
+			<h1 class="page-header">Audi A6 <small>р070вк</small></h1>
+			<!-- end page-header -->
+			
+			<div class="row">
+                <div class="col-md-12">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#default-tab-1" data-toggle="tab" aria-expanded="true">
+                                <span class="visible-xs">Общая информация</span>
+                                <span class="hidden-xs">Общая информация</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#default-tab-2" data-toggle="tab" aria-expanded="false">
+                                <span class="visible-xs">Данные для проката/цены</span>
+                                <span class="hidden-xs">Данные для проката/цены</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#default-tab-3" data-toggle="tab">
+                                <span class="visible-xs">Страхование</span>
+                                <span class="hidden-xs">Страхование</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#default-tab-4" data-toggle="tab">
+                                <span class="visible-xs">Устройства СБ</span>
+                                <span class="hidden-xs">Устройства СБ</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#default-tab-5" data-toggle="tab">
+                                <span class="visible-xs">Финансы</span>
+                                <span class="hidden-xs">Финансы</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#default-tab-6" data-toggle="tab">
+                                <span class="visible-xs">Кредит</span>
+                                <span class="hidden-xs">Кредит</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in" id="default-tab-1">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img style="width: 100%; height: 200px; object-fit: cover;" src="https://media.ed.edmunds-media.com/audi/a6/2013/oem/2013_audi_a6_sedan_30t-premium-quattro_fq_oem_2_1280.jpg" alt="">
+                                    <a href="#modal-dialog" data-toggle="modal" style="margin-top: 10px; width: 100%" class="btn btn-primary"><i class="fa fa-pencil"></i> Редактировать</a>
+                                    <div style="margin-top: 10px" class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td><b>ГОС. Номер</b></td>
+                                                    <td>Р 070 ВК 90</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>VIN Номер</b></td>
+                                                    <td>JN1WNYD21U0000001</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Класс авто</b></td>
+                                                    <td>Стандарт</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Марка авто</b></td>
+                                                    <td>Audi</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Модель авто</b></td>
+                                                    <td>A6</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Цвет</b></td>
+                                                    <td>Черный</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Мощность</b></td>
+                                                    <td>100 ЛС</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Тип КПП</b></td>
+                                                    <td>АКПП</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Тип топлива</b></td>
+                                                    <td>Стандарт</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>СОР</b></td>
+                                                    <td>035603683</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Год выпуска</b></td>
+                                                    <td>2006</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Поставщик ТС</b></td>
+                                                    <td>Прохоров А.В.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Собственник ТС</b></td>
+                                                    <td>Прохоров А.В.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h3>История ТО и ремонтных работ</h3>
+                                    <div style="margin-top: 15px" class="table-responsive">
+                                        <div class="tbl-filters" style="margin-bottom: 10px;">
+                                            <label for="">Показывать ТО</label>
+                                           <input data-render="switchery" data-theme="default" data-speed=".25s" style="display: none;" data-size="large" checked="false" data-switchery="true" type="checkbox">
+                                            <label style="margin-left: 15px;" for="">Показывать Ремонты</label>
+                                           <input data-render="switchery" data-theme="default" data-speed=".25s" style="display: none;" data-size="large" checked="false" data-switchery="true" type="checkbox">
+                                           <select class="pull-right" name="" id="#">
+                                               <option value="">Показывать за последнюю неделю</option>
+                                               <option value="">Показывать за последние 2 недели</option>
+                                               <option value="">Показывать за последний месяц</option>
+                                               <option value="">Показывать за последний год</option>
+                                               <option value="">Показывать всю историю</option>
+                                           </select>
+                                        </div>
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <td>Дата проведения работ</td>
+                                                    <td>Вид заявки</td>
+                                                    <td>Список работ</td>
+                                                    <td>Стоимость работ</td>
+                                                    <td>Стоимость запчастей</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>01.09.17 — 30.09.17</td>
+                                                    <td>ТО</td>
+                                                    <td>Достаточно длинный список работ, чтобы посмотреть как будет вести себя таблица</td>
+                                                    <td>1 000 ₽</td>
+                                                    <td>500 ₽</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12.08.17 — 30.08.17</td>
+                                                    <td>Ремонт</td>
+                                                    <td>Замена фар</td>
+                                                    <td>1 000 ₽</td>
+                                                    <td>500 ₽</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12.08.17 — 30.08.17</td>
+                                                    <td>Ремонт</td>
+                                                    <td>Замена фар</td>
+                                                    <td>1 000 ₽</td>
+                                                    <td>500 ₽</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12.08.17 — 30.08.17</td>
+                                                    <td>Ремонт</td>
+                                                    <td>Замена фар</td>
+                                                    <td>1 000 ₽</td>
+                                                    <td>500 ₽</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="default-tab-2">
+                            <div class="row">
+                                 <div class="col-md-4">
+                                    <h3>Комлектция и цены <a class="btn btn-success" href="#"><i class="fa fa-plus"></i></a></h3>
+                                     <div style="margin-top: 10px" class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td><b>СОР</b></td>
+                                                    <td>2 000 ₽</td>
+                                                    <td style="width: 5px;"><a href="#"><i style="font-size: 16px;" class="fa fa-trash text-danger"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Брелок сигнализации</b></td>
+                                                    <td>360 ₽</td>
+                                                    <td style="width: 5px;"><a href="#"><i style="font-size: 16px;" class="fa fa-trash text-danger"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Ключ ТС</b></td>
+                                                    <td>300 ₽</td>
+                                                    <td style="width: 5px;"><a href="#"><i style="font-size: 16px;" class="fa fa-trash text-danger"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>СОР</b></td>
+                                                    <td>2 000 ₽</td>
+                                                    <td style="width: 5px;"><a href="#"><i style="font-size: 16px;" class="fa fa-trash text-danger"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Регистратор</b></td>
+                                                    <td>2 500 ₽</td>
+                                                    <td style="width: 5px;"><a href="#"><i style="font-size: 16px;" class="fa fa-trash text-danger"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Аптечка</b></td>
+                                                    <td>1 500 ₽</td>
+                                                    <td style="width: 5px;"><a href="#"><i style="font-size: 16px;" class="fa fa-trash text-danger"></i></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h3>Данные о прокате <a class="btn btn-primary" href="#"><i class="fa fa-pencil"></i></a></h3>
+                                     <div style="margin-top: 10px" class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td><b>Поступила в прокат</b></td>
+                                                    <td>01.09.2017</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Оценочная стоимость</b></td>
+                                                    <td>200 000 ₽</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Залоговый депозит</b></td>
+                                                    <td>4 000 ₽</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Франшиза</b></td>
+                                                    <td>12 000 ₽</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border: none; background: #1a1a1a1a;"><b>Прайс лист</b></td>
+                                                    <td style="border: none; background: #1a1a1a1a;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Аренда на 1-2 дня</b></td>
+                                                    <td>2 000 ₽</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Аренда на 3-6 дней</b></td>
+                                                    <td>4 000 ₽</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Аренда от 7 дней</b></td>
+                                                    <td>8 000 ₽</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Аренда на месяц</b></td>
+                                                    <td>20 000 ₽</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border: none; background: #1a1a1a1a;"><b>Стоимость с водителем</b></td>
+                                                    <td style="border: none; background: #1a1a1a1a;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Минимальное кол-во часов</b></td>
+                                                    <td>3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Цена до 5 часов</b></td>
+                                                    <td>5 000 ₽</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Цена после 5 часов</b></td>
+                                                    <td>4 000 ₽</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h3>Данные о резине <a class="btn btn-primary" href="#"><i class="fa fa-pencil"></i></a></h3>
+                                     <div style="margin-top: 10px" class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td><b>Тип резины</b></td>
+                                                    <td>
+                                                        <i style="color: #3498db; font-size: 20px;" class="fa fa-snowflake-o"></i>
+                                                        <i style="color: #f39c12; font-size: 20px; display: none;" class="fa fa-sun-o"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Марка резины</b></td>
+                                                    <td>Мишилен</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Размер резины</b></td>
+                                                    <td>R14</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="default-tab-3">
+                            <div class="row">
+                                <div class="col-md-6">  
+                                    <h3 style="text-align: center;">Страхование КАСКО</h3>
+                                    <div class="alert alert-warning fade in m-b-15">
+                                        <strong>Внимание!</strong>
+                                        Страховка оканчивается через 10 дней <i>(31.09.2017)</i>. Вы можете <a href="#">продлить страховку</a>
+                                        <span class="close" data-dismiss="alert">×</span>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h4>Текущая страховка</h4>
+                                        <div style="margin-top: 10px" class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td><b>Номер договора</b></td>
+                                                    <td>45628556</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Дата начала страхования</b></td>
+                                                    <td>01.09.2017</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Дата окочания страхования</b></td>
+                                                    <td title="Через 10 дней"><span class="text-warning">30.09.2017 <i class="fa fa-clock-o"></i></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Компания стрховщик</b></td>
+                                                    <td>ОАО «СтрахТенд»</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Стоимость</b></td>
+                                                    <td>3 000 ₽</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <a class="btn btn-primary" href="#">Продлить страховку КАСКО</a>
+                                    </div>
+                                </div>
+                                    <div class="col-md-7">
+                                        <h4>История страховок</h4>
+                                        <div style="margin-top: 10px" class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <td>Номер договора</td>
+                                                    <td>Даты страхования</td>
+                                                    <td>Компания страховкщик</td>
+                                                    <td>Стоимость</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>12345753</td>
+                                                    <td>01.09.17 — 30.09.17</td>
+                                                    <td>ОАО «СтрахТенд»</td>
+                                                    <td>1 000 ₽</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>46437</td>
+                                                    <td>12.08.17 — 30.08.17</td>
+                                                    <td>ОАО «СтрахТенд»</td>
+                                                    <td>1 000 ₽</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8568567856</td>
+                                                    <td>12.08.17 — 30.08.17</td>
+                                                    <td>ОАО «СтрахТенд»</td>
+                                                    <td>1 000 ₽</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2341234</td>
+                                                    <td>12.08.17 — 30.08.17</td>
+                                                    <td>ОАО «СтрахТенд»</td>
+                                                    <td>1 000 ₽</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 style="text-align: center;">Страхование ОСАГО</h3>
+                                    <p style="text-align: center; margin-top: 10px; color: gray;">
+                                        Данное ТС не имеет текущей страховки ОСАГО, а также истории страховки ОСАГО. <br>   
+                                        <a class="btn btn-primary" style="text-align: center; margin-top: 10px;" href="#">Зарегистрировать страховку ОСАГО</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="default-tab-4">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <a class="btn btn-success" href="#"><i class="fa fa-plus"></i> Добавить устройство СБ</a>
+                                </div>
+                                <div class="col-md-12">
+                                    <div style="margin-top: 10px;" class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <td>Номер устройства</td>
+                                                    <td>Наименование устройства</td>
+                                                    <td>Дата активации</td>
+                                                    <td>Место установки</td>
+                                                    <td>Стоимость</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>12345753</td>
+                                                    <td>FindMe</td>
+                                                    <td>24.08.16</td>
+                                                    <td>Багажник</td>
+                                                    <td>1 000 ₽</td>
+                                                    <td><a href="#"><i style="font-size: 16px;" class="fa fa-trash text-danger"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12345753</td>
+                                                    <td>Starline</td>
+                                                    <td>24.08.16</td>
+                                                    <td>Багажник</td>
+                                                    <td>1 000 ₽</td>
+                                                    <td><a href="#"><i style="font-size: 16px;" class="fa fa-trash text-danger"></i></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="default-tab-5">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3>Финансовая информация о доходах</h3>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="widget widget-stats bg-green">
+                                        <div class="stats-icon"><i class="fa fa-car"></i></div>
+                                        <div class="stats-info">
+                                            <h4>Доход ООО «За Рулем»</h4>
+                                            <p>2 000 000 ₽</p>    
+                                        </div>
+<!--                                         <div class="stats-link">
+                                            <a href="javascript:;">View Detail <i class="fa fa-arrow-circle-o-right"></i></a>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="widget widget-stats bg-green">
+                                        <div class="stats-icon"><i class="fa fa-truck"></i></div>
+                                        <div class="stats-info">
+                                            <h4>Доход Поставщика</h4>
+                                            <p>30 000 ₽</p>    
+                                        </div>
+<!--                                         <div class="stats-link">
+                                            <a href="javascript:;">View Detail <i class="fa fa-arrow-circle-o-right"></i></a>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="widget widget-stats bg-green">
+                                        <div class="stats-icon"><i class="fa fa-cubes"></i></div>
+                                        <div class="stats-info">
+                                            <h4>Процент загрузки ТС</h4>
+                                            <p>40 %</p>    
+                                        </div>
+<!--                                         <div class="stats-link">
+                                            <a href="javascript:;">View Detail <i class="fa fa-arrow-circle-o-right"></i></a>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <h3>Финансовая информация о расходах</h3>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="widget widget-stats bg-red">
+                                        <div class="stats-icon"><i class="fa fa-wrench"></i></div>
+                                        <div class="stats-info">
+                                            <h4>Расходы на ТО/Ремонт</h4>
+                                            <p><a href="#modal-credit-fix" class="text-default" data-toggle="modal" style="color: #fff; text-decoration: underline;" href="#">50 000 ₽</a></p>    
+                                        </div>
+<!--                                         <div class="stats-link">
+                                            <a href="javascript:;">View Detail <i class="fa fa-arrow-circle-o-right"></i></a>
+                                        </div> -->
+                                    </div>
+                                </div>
+<!--                                 <div class="col-md-4">
+                                    <div class="widget widget-stats bg-red">
+                                        <div class="stats-icon"><i class="fa fa-cogs"></i></div>
+                                        <div class="stats-info">
+                                            <h4>Расходы на амортизацию</h4>
+                                            <p><a href="#modal-credit-amort" class="text-default" data-toggle="modal" style="color: #fff; text-decoration: underline;" href="#">15 540 ₽</a></p>    
+                                        </div> -->
+<!--                                         <div class="stats-link">
+                                            <a href="javascript:;">View Detail <i class="fa fa-arrow-circle-o-right"></i></a>
+                                        </div> -->
+<!--                                     </div>
+                                </div> -->
+                                <div class="col-md-6">
+                                    <div class="widget widget-stats bg-red">
+                                        <div class="stats-icon"><i class="fa fa-percent"></i></div>
+                                        <div class="stats-info">
+                                            <h4>Расходы на кредит</h4>
+                                            <p>50 000 ₽</p>    
+                                        </div>
+<!--                                         <div class="stats-link">
+                                            <a href="javascript:;">View Detail <i class="fa fa-arrow-circle-o-right"></i></a>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="default-tab-6">
+                            <h4>Общая информация о кредите</h4>
+                            <div style="margin-top: 10px" class="table-responsive">
+                                <table class="table table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td><b>Общая сумма кредита</b></td>
+                                            <td>1 450 000 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Выплачено</b></td>
+                                            <td>450 000 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Осталось выплатить</b></td>
+                                            <td>1 000 000 ₽</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <a class="btn btn-danger" href="#">Удалить кредит</a>
+                            </div>
+                            <h4>Таблица выплат</h4>
+                            <a class="btn btn-success" href="#"><i class="fa fa-plus"></i></a>
+                                <div style="margin-top: 10px;" class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <td>Дата выплаты</td>
+                                                <td>Сумма выплаты</td>
+                                                <td>Комментарии</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>01.08.2017</td>
+                                                <td>150 000 ₽</td>
+                                                <td></td>
+                                                <td><a href="#"><i style="font-size: 16px;" class="fa fa-trash text-danger"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>01.08.2017</td>
+                                                <td>300 000 ₽</td>
+                                                <td></td>
+                                                <td><a href="#"><i style="font-size: 16px;" class="fa fa-trash text-danger"></i></a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+		<!-- end #content -->
+		
+        <!-- begin theme-panel -->
+        <div class="modal modal-message fade in" id="modal-dialog" style="display: none; padding-right: 17px;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title">Редактировать Audi A6 <small>р070вк</small></h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="">Гос. номер</label>
+                                        <input class="form-control" type="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">VIN номер</label>
+                                        <input class="form-control" type="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">Класс авто</label>
+                                        <select class="form-control">
+                                            <option value="">Стандарт</option>
+                                            <option value="">Бизнес</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">Марка авто</label>
+                                        <input class="form-control" type="">
+                                    </div>  
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">Модель авто</label>
+                                        <input class="form-control" type="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Цвет</label>
+                                            <input class="form-control" type="">
+                                        </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">Мощность</label>
+                                        <input class="form-control" type="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">Тип КПП</label>
+                                        <select class="form-control">
+                                            <option value="">АККП</option>
+                                            <option value="">КПП</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">Тип топлива</label>
+                                        <select class="form-control">
+                                            <option value="">Стандарт</option>
+                                            <option value="">Дизель</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">СОР</label>
+                                        <input class="form-control" type="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">Год выпуска</label>
+                                        <input class="form-control" type="">
+                                    </div>  
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">Поставщик ТС</label>
+                                        <input class="form-control" type="">
+                                    </div>  
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="">Собственник ТС</label>
+                                        <input class="form-control" type="">
+                                    </div>  
+                                </div>
+                                <div class="col-md-6">	
+                                    <label for="">Показывать авто в графике</label>
+                                    <input data-render="switchery" data-theme="default" data-speed=".25s" style="display: none;" data-size="large" checked="false" data-switchery="true" type="checkbox">
+                                </div>
+                                <div class="col-md-6">	
+									<label for="">Фото авто</label>
+									<input type="file">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="javascript:;" class="btn btn-sm btn-white" data-dismiss="modal">Закрыть</a>
+                        <a href="javascript:;" class="btn btn-sm btn-success">Сохранить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade in" id="modal-credit-fix" style="display: none; padding-right: 17px;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title">Расходы авто на ТО/ремонт</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div style="margin-top: 10px" class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <td>Дата</td>
+                                        <td>Тип заяки</td>
+                                        <td>Список работ</td>
+                                        <td>Стоимость работ</td>
+                                        <td>Стоимость запчастей</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01.09.17 — 30.09.17</td>
+                                        <td>ТО</td>
+                                        <td>Достаточно длинный список работ, чтобы посмотреть как будет вести себя таблица</td>
+                                        <td>1 000 ₽</td>
+                                        <td>500 ₽</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12.08.17 — 30.08.17</td>
+                                        <td>Ремонт</td>
+                                        <td>Замена фар</td>
+                                        <td>1 000 ₽</td>
+                                        <td>500 ₽</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12.08.17 — 30.08.17</td>
+                                        <td>Ремонт</td>
+                                        <td>Замена фар</td>
+                                        <td>1 000 ₽</td>
+                                        <td>500 ₽</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12.08.17 — 30.08.17</td>
+                                        <td>Ремонт</td>
+                                        <td>Замена фар</td>
+                                        <td>1 000 ₽</td>
+                                        <td>500 ₽</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade in" id="modal-credit-amort" style="display: none; padding-right: 17px;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title">Расходы амортизацию</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div style="margin-top: 10px" class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <td>Дата</td>
+                                        <td>Сумма обязательного платежа</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01.09.17</td>
+                                        <td>1 000 ₽</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12.08.17</td>
+                                        <td>1 700 ₽</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12.08.17</td>
+                                        <td>1 500 ₽</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="theme-panel">
+            <a href="javascript:;" data-click="theme-panel-expand" class="theme-collapse-btn"><i class="fa fa-cog"></i></a>
+            <div class="theme-panel-content">
+                <h5 class="m-t-0">Color Theme</h5>
+                <ul class="theme-list clearfix">
+                    <li class="active"><a href="javascript:;" class="bg-green" data-theme="default" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-red" data-theme="red" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Red">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-blue" data-theme="blue" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Blue">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-purple" data-theme="purple" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Purple">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-orange" data-theme="orange" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Orange">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-black" data-theme="black" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Black">&nbsp;</a></li>
+                </ul>
+                <div class="divider"></div>
+                <div class="row m-t-10">
+                    <div class="col-md-5 control-label double-line">Header Styling</div>
+                    <div class="col-md-7">
+                        <select name="header-styling" class="form-control input-sm">
+                            <option value="1">default</option>
+                            <option value="2">inverse</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row m-t-10">
+                    <div class="col-md-5 control-label">Header</div>
+                    <div class="col-md-7">
+                        <select name="header-fixed" class="form-control input-sm">
+                            <option value="1">fixed</option>
+                            <option value="2">default</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row m-t-10">
+                    <div class="col-md-5 control-label double-line">Sidebar Styling</div>
+                    <div class="col-md-7">
+                        <select name="sidebar-styling" class="form-control input-sm">
+                            <option value="1">default</option>
+                            <option value="2">grid</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row m-t-10">
+                    <div class="col-md-5 control-label">Sidebar</div>
+                    <div class="col-md-7">
+                        <select name="sidebar-fixed" class="form-control input-sm">
+                            <option value="1">fixed</option>
+                            <option value="2">default</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row m-t-10">
+                    <div class="col-md-5 control-label double-line">Sidebar Gradient</div>
+                    <div class="col-md-7">
+                        <select name="content-gradient" class="form-control input-sm">
+                            <option value="1">disabled</option>
+                            <option value="2">enabled</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row m-t-10">
+                    <div class="col-md-5 control-label double-line">Content Styling</div>
+                    <div class="col-md-7">
+                        <select name="content-styling" class="form-control input-sm">
+                            <option value="1">default</option>
+                            <option value="2">black</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row m-t-10">
+                    <div class="col-md-12">
+                        <a href="#" class="btn btn-inverse btn-block btn-sm" data-click="reset-local-storage"><i class="fa fa-refresh m-r-3"></i> Reset Local Storage</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end theme-panel -->
+		
+		<!-- begin scroll to top btn -->
+		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
+		<!-- end scroll to top btn -->
+	</div>
+	<!-- end page container -->
+	
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="assets/plugins/jquery/jquery-1.9.1.min.js"></script>
+	<script src="assets/plugins/jquery/jquery-migrate-1.1.0.min.js"></script>
+	<script src="assets/plugins/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="assets/crossbrowserjs/html5shiv.js"></script>
+		<script src="assets/crossbrowserjs/respond.min.js"></script>
+		<script src="assets/crossbrowserjs/excanvas.min.js"></script>
+	<![endif]-->
+	<script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="assets/plugins/jquery-cookie/jquery.cookie.js"></script>
+	<!-- ================== END BASE JS ================== -->
+	
+	<!-- ================== BEGIN PAGE LEVEL JS ================== -->
+    <script src="assets/plugins/switchery/switchery.min.js"></script>
+    <script src="assets/js/form-slider-switcher.demo.min.js"></script>
+	<script src="assets/js/apps.min.js"></script>
+	<!-- ================== END PAGE LEVEL JS ================== -->
+	
+	<script>
+		$(document).ready(function() {
+			App.init();
+            FormSliderSwitcher.init();
+		});
+	</script>
+</body>
+</html>
